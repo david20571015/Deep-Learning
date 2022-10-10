@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hw1"
+version = "0.1.0"
+description = ""
+authors = ["David Chiu <david20571015@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.6.1"
+numpy = "^1.23.3"
+pandas = "^1.5.0"
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.32.0"
+pylint = "^2.15.3"
+toml = "^0.10.2"
+
+[tool.yapf]
+based_on_style = "google"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
