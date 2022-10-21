@@ -26,6 +26,10 @@ disable = '''
     missing-function-docstring,
 '''
 
+[tool.poetry.group.ipynb.dependencies]
+jupyter = "^1.0.0"
+notebook = "^6.5.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
