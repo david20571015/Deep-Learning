@@ -19,6 +19,13 @@ toml = "^0.10.2"
 [tool.yapf]
 based_on_style = "google"
 
+[tool.pylint.'MESSAGES CONTROL']
+disable = '''
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+'''
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
