@@ -1,5 +1,5 @@
-from src.model import Model
 from src.losses import Loss
+from src.model import Model
 
 
 def split_batch(data, target, batch_size):
