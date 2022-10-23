@@ -49,3 +49,13 @@ class ReLU(Layer):
 
     def backward(self, grad):
         return grad * (self.inputs > 0)
+
+
+class Sigmoid(Layer):
+
+    def forward(self, x):
+        return 1 / (1 + np.exp(-x))
+
+    def backward(self, grad):
+        sigmoid = 1 / (1 + np.exp(-self.inputs))
+        return grad * (1 - sigmoid) * sigmoid
