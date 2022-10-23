@@ -26,9 +26,11 @@ class Linear(Layer):
     def __init__(self, in_features, out_features):
         self.in_features = in_features
         self.out_features = out_features
+
+        rng = np.random.default_rng()
         self.params = {
-            'weight': np.random.randn(in_features, out_features),
-            'bias': np.random.randn(out_features),
+            'weight': rng.standard_normal((in_features, out_features)),
+            'bias': rng.standard_normal((out_features)),
         }
 
     def forward(self, x):
