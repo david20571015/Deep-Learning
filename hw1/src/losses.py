@@ -23,7 +23,7 @@ class MSE(Loss):
         return np.mean(np.square(y_pred - y_true))
 
     def backward(self):
-        return 2 * np.subtract(self.y_pred, self.y_true) / self.y_pred.shape[0]
+        return 2 * (self.y_pred - self.y_true) / self.y_pred.shape[0]
 
 
 class BinaryCrossEntropy(Loss):
