@@ -56,8 +56,8 @@ class ReLU(Layer):
 class Sigmoid(Layer):
 
     def forward(self, x):
-        return 1 / (1 + np.exp(-x))
+        return (1 + np.tanh(x / 2)) / 2
 
     def backward(self, grad):
-        sigmoid = 1 / (1 + np.exp(-self.inputs))
+        sigmoid = (1 + np.tanh(self.inputs / 2)) / 2
         return grad * (1 - sigmoid) * sigmoid
