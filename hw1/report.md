@@ -43,4 +43,9 @@ Model([
 
 ### Feature Importance
 
+To select the most important features, I remain each feature and remove the rest. Then calculate the loss of the output. The feature with the lowest loss is the most important feature.
+
+The result is:
+`Overall Height` > `Relative Compactness` > `Glazing Area` > `Glazing Area Distribution` > `Roof Area` > `Orientation` > `Wall Area` > `Surface Area`
+
 ## Classification
