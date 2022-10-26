@@ -23,7 +23,8 @@ Model([
 - optimizer: sgd
 - learning rate: 0.01
 - loss
-![learning curve](./images/regression/loss.png)
+
+    ![learning curve](./images/regression/loss.png)
 
 | epoch | train rms error | test rms error |
 | ----- | --------------- | -------------- |
@@ -36,10 +37,12 @@ Model([
 ### Prediction
 
 - train
-![train](./images/regression/train_pred.png)
+
+    ![train](./images/regression/train_pred.png)
 
 - test
-![test](./images/regression/test_pred.png)
+
+    ![test](./images/regression/test_pred.png)
 
 ### Feature Importance
 
@@ -72,8 +75,11 @@ model = Model([
 - optimizer: sgd
 - learning rate: 0.03
 - loss
+
     ![loss](images/classification/loss.png)
+
 - accuracy
+
     ![acc](images/classification/acc.png)
 
 | epoch | train loss | test loss | train acc | test acc |
@@ -89,9 +95,12 @@ model = Model([
 I trained two models with different number of latent features. One it as above, the other has 3 nodes in the layer before the output layer.
 
 - 2 nodes
+  
     ![2 nodes 9 epoch](images/classification/latent_9_2d.png)
     ![2 nodes 4999 epoch](images/classification/latent_4999_2d.png)
+
 - 3 nodes
+  
     ![3 nodes 9 epoch](images/classification/latent_9_3d.png)
     ![3 nodes 4999 epoch](images/classification/latent_4999_3d.png)
 
