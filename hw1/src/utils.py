@@ -6,7 +6,8 @@ def split_batch(data, target, batch_size):
     for i in range(0, len(data), batch_size):
         if i + batch_size < len(data):
             yield data[i:i + batch_size], target[i:i + batch_size]
-        yield data[i:], target[i:]
+        else:
+            yield data[i:], target[i:]
 
 
 def train_step(data, target, model: Model, loss_fn: Loss, learning_rate):

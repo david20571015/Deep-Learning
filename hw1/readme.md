@@ -27,11 +27,11 @@ Model([
 
 | epoch | train rms error | test rms error |
 | ----- | --------------- | -------------- |
-| 999   | 0.928578        | 1.074682       |
-| 1999  | 0.744258        | 0.905798       |
-| 2999  | 0.685659        | 0.860051       |
-| 3999  | 0.653567        | 0.843214       |
-| 4999  | 0.630212        | 0.839666       |
+| 999   | 0.957335        | 1.396751       |
+| 1999  | 0.525375        | 0.756762       |
+| 2999  | 0.372102        | 0.558052       |
+| 3999  | 0.331808        | 0.519184       |
+| 4999  | 0.306968        | 0.495984       |
 
 ### Prediction
 
@@ -46,6 +46,6 @@ Model([
 To select the most important features, I remain each feature and remove the rest. Then calculate the loss of the output. The feature with the lowest loss is the most important feature.
 
 The result is:
-`Overall Height` > `Relative Compactness` > `Glazing Area` > `Glazing Area Distribution` > `Roof Area` > `Orientation` > `Wall Area` > `Surface Area`
+`Overall Height` > `Roof Area` > `Relative Compactness` > `Wall Area` > `Glazing Area` > `Orientation` > `Surface Area` > `Glazing Area Distribution`
 
 ## Classification
