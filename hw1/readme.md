@@ -48,7 +48,7 @@ To select the most important features, I remain each feature and remove the rest
 The result is:
 `Overall Height` > `Roof Area` > `Relative Compactness` > `Wall Area` > `Glazing Area` > `Orientation` > `Surface Area` > `Glazing Area Distribution`
 
-## Classification
+## [Classification](classification.ipynb)
 
 ### Network Architecture
 
