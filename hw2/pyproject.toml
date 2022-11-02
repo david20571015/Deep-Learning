@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "hw2"
+version = "0.1.0"
+description = ""
+authors = ["David Chiu <david20571015@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+tensorflow = "^2.10.0"
+tensorflow-datasets = "^4.7.0"
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.32.0"
+pylint = "^2.15.5"
+toml = "^0.10.2"
+
+[tool.yapf]
+based_on_style = "google"
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = '''
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+'''
+
+
+[tool.poetry.group.ipynb.dependencies]
+jupyter = "^1.0.0"
+notebook = "^6.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
